@@ -1,4 +1,6 @@
 import styles from "./statistic.module.css";
+import Grid from "@mui/material/Grid";
+
 const Statistic = () => {
   const statistics = [
     {
@@ -18,19 +20,25 @@ const Statistic = () => {
       name: "Etudiants satisfaits",
     },
     {
-      number: "15",
-      name: "Professeurs a votre écoute",
+      number: "+15",
+      name: "Teachers",
+    },
+    {
+      number: "+15",
+      name: "Partenaires",
     },
   ];
   return (
-    <div className={styles.container}>
+    <Grid container className={styles.container}>
       {statistics.map((statistic) => (
-        <div className={styles.statistic} key={statistic.name}>
-          <h1>{statistic.number}</h1>
-          <p>{statistic.name}</p>
-        </div>
+        <Grid item xs={6} md={4}>
+          <div className={styles.statistic} key={statistic.name}>
+            <h1>{statistic.number}</h1>
+            <p>{statistic.name}</p>
+          </div>
+        </Grid>
       ))}
-    </div>
+    </Grid>
   );
 };
 

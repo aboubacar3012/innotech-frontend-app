@@ -137,6 +137,7 @@ const Courses = () => {
             justifyContent="center"
             // alignItems="center"
             marginY={3}
+            item
           >
             <div className={styles.card}>
               <Image

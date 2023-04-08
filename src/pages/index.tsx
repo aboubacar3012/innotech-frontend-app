@@ -21,8 +21,8 @@ export default function Home() {
         <div className="center">
           <Header />
           <Banner />
-          {/* <Statistic />
-          <BecomePro /> */}
+          <Statistic />
+          {/* <BecomePro /> */}
         </div>
       </div>
       {/* <main className="main">
