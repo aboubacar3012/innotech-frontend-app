@@ -22,7 +22,7 @@ export default function Home() {
           <Header />
           <Banner />
           <Statistic />
-          {/* <BecomePro /> */}
+          <BecomePro />
         </div>
       </div>
       {/* <main className="main">
