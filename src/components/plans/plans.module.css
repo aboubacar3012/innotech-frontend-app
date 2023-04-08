@@ -1,0 +1,45 @@
+.main{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:15px;
+    width: 45vw;
+    margin:15px;
+    border:1px solid lightgray;
+    border-radius: 30px;
+    padding:10px
+}
+
+.header{
+    width:600px;
+    margin:auto;
+    text-align: center;
+}
+
+.card{
+    width:330px;   
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+   
+    padding:20px
+}
+
+
+ .info{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:5px;
+}
+ .infos{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:15px;
+}

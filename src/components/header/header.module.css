@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.right {
+
+}
+
+
+.list a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    margin:0 15px;
+    width: 30px;
+    padding: 10px 30px ;
+}
+
+.list a:hover{
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+.list  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+

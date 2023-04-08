@@ -1,0 +1,28 @@
+.card{
+    width:400px;   
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    border:1px solid lightgray;
+    border-radius: 30px;
+}
+.header{
+    width:700px;
+    margin:auto;
+    text-align: center;
+}
+
+.image {
+    
+    border-radius: 30px;
+}
+
+.infos, .info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.body{
+    padding:8px
+}

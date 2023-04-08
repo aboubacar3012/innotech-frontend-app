@@ -1,0 +1,16 @@
+.container{
+    border-width: .5px 0 .5px 0;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.statistic{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    
+}

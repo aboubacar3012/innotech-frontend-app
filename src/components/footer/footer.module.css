@@ -1,0 +1,47 @@
+.footer{
+    text-align:center;
+    margin:auto;
+    background-color:black;
+    color:white;
+    padding:30px
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    width: 30px;
+    padding: 10px 30px ;
+}
+
+.list a:hover{
+    background-color: lightblue;
+    border-radius: 25px;
+}
+
+.list  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin:auto;
+}
+
+.socialMedia{
+    margin:10px;
+}
+
+.media{
+    padding:10px;
+    font-size:50px;
+    cursor:pointer;
+}
+
+.media:hover{
+    background-color:lightblue;
+    border-radius:30px
+}
