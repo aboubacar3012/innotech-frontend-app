@@ -14,10 +14,10 @@ const Banner = () => {
           apprendre les compétences pratiques nécessaires pour créer des
           applications web et mobiles de qualité professionnelle.
         </p>
-        <CallToActionButton />
+        <CallToActionButton center={true} />
       </div>
       <div className={styles.right}>
-        <Image src={bannerImage} alt="me" width={500} height={350} />
+        <Image src={bannerImage} alt="me" className={styles.bannerImageSize} />
       </div>
     </div>
   );

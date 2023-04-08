@@ -1,16 +1,6 @@
-:root {
-  --e-global-color-astglobalcolor0: #fcd75f;
-  --e-global-color-astglobalcolor1: #fce173;
-  --e-global-color-astglobalcolor2: #131416;
-  --e-global-color-astglobalcolor3: #7a7a7a;
-  --e-global-color-astglobalcolor4: #fdfaed;
-  --e-global-color-astglobalcolor5: #ffffff;
-  --e-global-color-astglobalcolor6: #dfe0e2;
-  --e-global-color-astglobalcolor7: #76787f;
-  --e-global-color-astglobalcolor8: #f4f4f6;
-}
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
 
 body{
   margin:0;
@@ -23,11 +13,26 @@ h1, h2, h3, h4, h5, h6 {
 .section {
   background-image: url('../public/assets/background-image.svg');
 }
+
+
 .center{
   margin:auto;
   padding-top: 20px;
   width: 50vw;
 }
 
-
-
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .center{
+    margin:auto;
+    padding-top: 20px;
+    width: 100vw;
+  }
+ 
+}
+@media screen and (min-width: 768px) {
+  /* For desktop: */
+  
+ 
+ 
+}

@@ -30,7 +30,7 @@ const Header = () => {
         </div> */}
       </div>
       <div className={styles.right}>
-        <CallToActionButton />
+        <CallToActionButton center={false} />
       </div>
     </div>
   );

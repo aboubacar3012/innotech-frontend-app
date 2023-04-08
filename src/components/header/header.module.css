@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin:0 15px;
 }
 
 .logo{
@@ -15,9 +16,7 @@
     width: 400px;
 }
 
-.right {
 
-}
 
 
 .list a {
@@ -41,3 +40,10 @@
     width: 300px;
 }
 
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+
+    .right {
+        display:none;
+    }
+}

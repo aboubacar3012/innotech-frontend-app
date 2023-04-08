@@ -9,7 +9,7 @@ const CallToAction = () => {
         carrière de développeur aujourd'hui !
       </p>
 
-      <CallToActionButton />
+      <CallToActionButton center={false} />
     </div>
   );
 };

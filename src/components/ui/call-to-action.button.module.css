@@ -11,7 +11,15 @@
     background-color: rgba(0, 0, 0, 0.784);
     cursor: pointer;
 }
+
 .button:hover {
     background-color: whitesmoke;
     color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .center{
+        margin:auto
+    }
 }

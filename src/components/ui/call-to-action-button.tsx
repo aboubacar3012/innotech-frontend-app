@@ -1,8 +1,10 @@
 import { useRouter } from "next/router";
 import styles from "./call-to-action.button.module.css";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
-const CallToActionButton = () => {
+interface Props {
+  center: boolean;
+}
+const CallToActionButton = ({ center }: Props) => {
   const router = useRouter();
 
   const onClickButton = () => {
@@ -13,7 +15,10 @@ const CallToActionButton = () => {
   };
 
   return (
-    <button onClick={onClickButton} className={styles.button}>
+    <button
+      onClick={onClickButton}
+      className={`${styles.button} ${center ? styles.center : ""}`}
+    >
       Inscrivez-vous maintenant <ChevronRightIcon fontSize="large" />
     </button>
   );

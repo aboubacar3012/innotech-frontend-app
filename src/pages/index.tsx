@@ -16,32 +16,23 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Accueil | Innotech Academy</title>
-        <meta
-          name="description"
-          content="Apprenez à créer des applications web et mobiles de qualité professionnelle"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <BasicSpeedDial />
       <div className="section">
         <div className="center">
           <Header />
           <Banner />
-          <Statistic />
-          <BecomePro />
+          {/* <Statistic />
+          <BecomePro /> */}
         </div>
       </div>
-      <main className="main">
+      {/* <main className="main">
         <div className="center">
           <Courses />
           <Plans />
         </div>
       </main>
       <CallToAction />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
