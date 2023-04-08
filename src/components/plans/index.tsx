@@ -8,7 +8,7 @@ const Plans = () => {
   return (
     <div className={styles.main}>
       <div className={styles.header}>
-        <h1>NIVEAU & TARIFS</h1>
+        <h1>NIVEAUX & TARIFS</h1>
         <p>
           Nous proposons une formation Fullstack en développement web et mobile
           de qualité pour les débutants comme pour les développeurs plus
@@ -131,3 +131,4 @@ const Plans = () => {
 };
 
 export default Plans;
+

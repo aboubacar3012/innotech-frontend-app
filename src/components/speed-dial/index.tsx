@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Backdrop from "@mui/material/Backdrop";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
+import uniqid from "uniqid";
 
 // icons
 import CallIcon from "@mui/icons-material/Call";
@@ -46,7 +47,7 @@ export default function BasicSpeedDial() {
       >
         {actions.map((action) => (
           <SpeedDialAction
-            key={action.name}
+            key={uniqid()}
             icon={action.icon}
             tooltipTitle={action.name}
             onClick={() => handleClick(action.link)}

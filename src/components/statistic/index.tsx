@@ -1,8 +1,11 @@
 import styles from "./statistic.module.css";
 import Grid from "@mui/material/Grid";
-
+import uniqid from "uniqid";
+interface Props {
+  statistics?: any;
+}
 const Statistic = () => {
-  const statistics = [
+  const statistics: any = [
     {
       number: "80",
       name: "Heures de formation",
@@ -28,18 +31,27 @@ const Statistic = () => {
       name: "Partenaires",
     },
   ];
-  return (
-    <Grid container className={styles.container}>
-      {statistics.map((statistic) => (
-        <Grid item xs={6} md={4}>
-          <div className={styles.statistic} key={statistic.name}>
-            <h1>{statistic.number}</h1>
-            <p>{statistic.name}</p>
-          </div>
-        </Grid>
-      ))}
-    </Grid>
-  );
+
+  if (statistics)
+    return (
+      <Grid container className={styles.container}>
+        {statistics.map((statistic: any) => (
+          <Grid item xs={6} md={4} key={uniqid()}>
+            <div className={styles.statistic}>
+              <h1>{statistic.number}</h1>
+              <p>{statistic.name}</p>
+            </div>
+          </Grid>
+        ))}
+      </Grid>
+    );
+  else return <></>;
 };
 
 export default Statistic;
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

@@ -2,6 +2,7 @@ import bannerImage from "@/public/assets/banner-image.png";
 import Image from "next/image";
 import styles from "./courses.module.css";
 import Grid from "@mui/material/Grid"; // Grid version 1
+import uniqid from "uniqid";
 
 // icons
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
@@ -9,8 +10,12 @@ import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import { Fragment } from "react";
 
+interface Props {
+  courses?: any;
+}
+
 const Courses = () => {
-  const courses = [
+  const courses: any = [
     {
       title: "Introduction",
       chapters: 4,
@@ -111,66 +116,74 @@ const Courses = () => {
         "Dans cette partie, nous allons apprendre à créer des applications mobiles Android et iOS natives avec JavaScript et React en utilisant le framework React Native. Nous plongerons dans l'écosystème React Native en développant une application mobile complète à partir de zéro. En cours de route, nous apprendrons des concepts tels que comment rendre des composants d'interface utilisateur natifs avec React Native, comment créer de belles interfaces utilisateur, comment communiquer avec un serveur et comment tester une application React Native.",
     },
   ];
-  return (
-    <div>
-      <div className={styles.header}>
-        <h1>PROGRAMME</h1>
-        <p>
-          Notre programme intensif de 4 semaines est conçu pour vous aider à
-          devenir un développeur professionnel en un temps record.
-          <br />
-          Vous apprendrez les compétences pratiques nécessaires pour créer des
-          applications web et mobiles de qualité professionnelle, avec l'aide de
-          nos instructeurs expérimentés qui vous guideront à travers des projets
-          pratiques, des ateliers et des défis.
-          <br />
-        </p>
-      </div>
+  if (courses)
+    return (
+      <div>
+        <div className={styles.header}>
+          <h1>PROGRAMME</h1>
+          <p>
+            Notre programme intensif de 4 semaines est conçu pour vous aider à
+            devenir un développeur professionnel en un temps record.
+            <br />
+            Vous apprendrez les compétences pratiques nécessaires pour créer des
+            applications web et mobiles de qualité professionnelle, avec l'aide
+            de nos instructeurs expérimentés qui vous guideront à travers des
+            projets pratiques, des ateliers et des défis.
+            <br />
+          </p>
+        </div>
 
-      <Grid container>
-        {courses.map((course) => (
-          <Grid
-            xs={12}
-            md={6}
-            key={course.title}
-            display="flex"
-            justifyContent="center"
-            // alignItems="center"
-            marginY={3}
-            item
-          >
-            <div className={styles.card}>
-              <Image
-                src={course.image}
-                alt="me"
-                className={`${styles.image} ${styles.cardImage}`}
-                width={400}
-                height={270}
-              />
-              <div className={styles.body}>
-                <h2>{course.title}</h2>
-                <div className={styles.infos}>
-                  <div className={styles.info}>
-                    <PlayCircleFilledIcon />
-                    <span>{Math.floor(Math.random() * 4 + 1)} chapitres</span>
+        <Grid container>
+          {courses.map((course: any) => (
+            <Grid
+              xs={12}
+              md={6}
+              key={uniqid()}
+              display="flex"
+              justifyContent="center"
+              // alignItems="center"
+              marginY={3}
+              item
+            >
+              <div className={styles.card}>
+                <Image
+                  src={course.image}
+                  alt="me"
+                  className={`${styles.image} ${styles.cardImage}`}
+                  width={400}
+                  height={270}
+                />
+                <div className={styles.body}>
+                  <h2>{course.title}</h2>
+                  <div className={styles.infos}>
+                    <div className={styles.info}>
+                      <PlayCircleFilledIcon />
+                      <span>{Math.floor(Math.random() * 4 + 1)} chapitres</span>
+                    </div>
+                    <div className={styles.info}>
+                      <HourglassEmptyIcon />
+                      <span>{Math.floor(Math.random() * 7 + 1)} heures</span>
+                    </div>
+                    <div className={styles.info}>
+                      <ListAltIcon />
+                      <span>{Math.floor(Math.random() * 3 + 1)} éxercices</span>
+                    </div>
                   </div>
-                  <div className={styles.info}>
-                    <HourglassEmptyIcon />
-                    <span>{Math.floor(Math.random() * 7 + 1)} heures</span>
-                  </div>
-                  <div className={styles.info}>
-                    <ListAltIcon />
-                    <span>{Math.floor(Math.random() * 3 + 1)} éxercices</span>
-                  </div>
+                  <p>{course.description}</p>
                 </div>
-                <p>{course.description}</p>
               </div>
-            </div>
-          </Grid>
-        ))}
-      </Grid>
-    </div>
-  );
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+    );
+  else return <></>;
 };
 
 export default Courses;
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

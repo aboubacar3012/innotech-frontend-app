@@ -1,5 +1,6 @@
 import styles from "./become-pro.module.css";
 import Image from "next/image";
+
 // icons
 import WebAppLogo from "@/public/assets/computer.png";
 import MobileAppLogo from "@/public/assets/user-interface.png";
