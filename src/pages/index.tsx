@@ -25,14 +25,16 @@ export default function Home() {
           <BecomePro />
         </div>
       </div>
-      {/* <main className="main">
+      {/* 
+      <main className="main">
         <div className="center">
           <Courses />
           <Plans />
         </div>
       </main>
+      */}
       <CallToAction />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
