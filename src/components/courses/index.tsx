@@ -141,9 +141,9 @@ const Courses = () => {
           >
             <div className={styles.card}>
               <Image
-                className={styles.image}
                 src={course.image}
                 alt="me"
+                className={`${styles.image} ${styles.cardImage}`}
                 width={400}
                 height={270}
               />

@@ -23,7 +23,7 @@ const Plans = () => {
         <div>
           {" "}
           <Image
-            className={styles.image}
+            className={`${styles.image} ${styles.cardImage}`}
             src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/136860912/original/9b2b11fc6347aa6836ab4e58949a383e064065f9/create-a-custom-responsive-website-using-html-css-javascript-bootstrap.jpg"
             alt="me"
             width={380}
@@ -53,7 +53,7 @@ const Plans = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.container} ${styles.right}`}>
+      <div className={`${styles.container} ${styles.right} ${styles.middle}`}>
         <div>
           <h1>NIVEAU AVANCEE</h1>
           <hr />
@@ -82,7 +82,7 @@ const Plans = () => {
         <div>
           {" "}
           <Image
-            className={styles.image}
+            className={`${styles.image} ${styles.cardImage}`}
             src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/135417407/original/222912611cbbce26fa30eced52ef9abf50fa172b/create-react-app-with-apollo-graphql.jpg"
             alt="me"
             width={380}
@@ -94,7 +94,7 @@ const Plans = () => {
         <div>
           {" "}
           <Image
-            className={styles.image}
+            className={`${styles.image} ${styles.cardImage}`}
             src="https://unblast.com/wp-content/uploads/2022/08/Programmer-Illustration.jpg"
             alt="me"
             width={380}
