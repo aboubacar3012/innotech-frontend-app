@@ -22,13 +22,15 @@ export default function Home() {
           <Header />
           <Banner />
           <Statistic />
-          <BecomePro />
         </div>
       </div>
 
       <main className="main">
         <div className="center">
-          <Courses />
+          <BecomePro />
+        </div>
+        <Courses />
+        <div className="center">
           <Plans />
         </div>
       </main>

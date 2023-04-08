@@ -118,7 +118,7 @@ const Courses = () => {
   ];
   if (courses)
     return (
-      <div>
+      <div className={styles.container}>
         <div className={styles.header}>
           <h1>PROGRAMME</h1>
           <p>
@@ -133,48 +133,54 @@ const Courses = () => {
           </p>
         </div>
 
-        <Grid container>
-          {courses.map((course: any) => (
-            <Grid
-              xs={12}
-              md={6}
-              key={uniqid()}
-              display="flex"
-              justifyContent="center"
-              // alignItems="center"
-              marginY={3}
-              item
-            >
-              <div className={styles.card}>
-                <Image
-                  src={course.image}
-                  alt="me"
-                  className={`${styles.image} ${styles.cardImage}`}
-                  width={400}
-                  height={270}
-                />
-                <div className={styles.body}>
-                  <h2>{course.title}</h2>
-                  <div className={styles.infos}>
-                    <div className={styles.info}>
-                      <PlayCircleFilledIcon />
-                      <span>{Math.floor(Math.random() * 4 + 1)} chapitres</span>
+        <div className={styles.courses}>
+          <Grid container>
+            {courses.map((course: any) => (
+              <Grid
+                xs={12}
+                md={6}
+                key={uniqid()}
+                display="flex"
+                justifyContent="center"
+                // alignItems="center"
+                marginY={3}
+                item
+              >
+                <div className={styles.card}>
+                  <Image
+                    src={course.image}
+                    alt="me"
+                    className={`${styles.image} ${styles.cardImage}`}
+                    width={400}
+                    height={270}
+                  />
+                  <div className={styles.body}>
+                    <h2>{course.title}</h2>
+                    <div className={styles.infos}>
+                      <div className={styles.info}>
+                        <PlayCircleFilledIcon />
+                        <span>
+                          {Math.floor(Math.random() * 4 + 1)} chapitres
+                        </span>
+                      </div>
+                      <div className={styles.info}>
+                        <HourglassEmptyIcon />
+                        <span>{Math.floor(Math.random() * 7 + 1)} heures</span>
+                      </div>
+                      <div className={styles.info}>
+                        <ListAltIcon />
+                        <span>
+                          {Math.floor(Math.random() * 3 + 1)} éxercices
+                        </span>
+                      </div>
                     </div>
-                    <div className={styles.info}>
-                      <HourglassEmptyIcon />
-                      <span>{Math.floor(Math.random() * 7 + 1)} heures</span>
-                    </div>
-                    <div className={styles.info}>
-                      <ListAltIcon />
-                      <span>{Math.floor(Math.random() * 3 + 1)} éxercices</span>
-                    </div>
+                    <p>{course.description}</p>
                   </div>
-                  <p>{course.description}</p>
                 </div>
-              </div>
-            </Grid>
-          ))}
-        </Grid>
+              </Grid>
+            ))}
+          </Grid>
+        </div>
       </div>
     );
   else return <></>;
