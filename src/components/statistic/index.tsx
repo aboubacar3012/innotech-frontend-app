@@ -11,7 +11,7 @@ const Statistic = () => {
       name: "Heures de formation",
     },
     {
-      number: "12",
+      number: "10",
       name: "Modules de formation",
     },
     {
@@ -23,11 +23,11 @@ const Statistic = () => {
       name: "Etudiants satisfaits",
     },
     {
-      number: "+15",
+      number: "+5",
       name: "Teachers",
     },
     {
-      number: "+15",
+      number: "+8",
       name: "Partenaires",
     },
   ];

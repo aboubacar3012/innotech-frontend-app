@@ -5,6 +5,17 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const Plans = () => {
+  const plans = [
+    {
+      title: "NIVEAU DE BASE",
+      image:
+        "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/136860912/original/9b2b11fc6347aa6836ab4e58949a383e064065f9/create-a-custom-responsive-website-using-html-css-javascript-bootstrap.jpg",
+      description: "",
+      price: 0,
+      during: 2,
+      isActive: false,
+    },
+  ];
   return (
     <div className={styles.main}>
       <div className={styles.header}>
@@ -50,6 +61,7 @@ const Plans = () => {
               <CheckCircleIcon />
               <span>Durée: 4 Semaines</span>
             </div>
+            <p>⚠ pas encore disponible</p>
           </div>
         </div>
       </div>
@@ -71,7 +83,7 @@ const Plans = () => {
           <div className={styles.infos}>
             <div className={styles.info}>
               <CheckCircleIcon />
-              <span>Prix: 1.500.000 GNF</span>
+              <span>Prix: 500.000 GNF</span>
             </div>
             <div className={styles.info}>
               <CheckCircleIcon />
@@ -123,6 +135,7 @@ const Plans = () => {
               <CheckCircleIcon />
               <span>Durée: 24 Semaines </span>
             </div>
+            <p>⚠ pas encore disponible</p>
           </div>
         </div>
       </div>

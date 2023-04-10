@@ -35,7 +35,7 @@ const BecomePro = () => {
             professionnelle en utilisant des outils modernes tels que MongoDB et
             GraphQL.
             <br /> A la fin de cette formation vous acquerrez les compétences
-            nécessaires pour devenir un développeur web efficace et polyvalent
+            nécessaires pour devenir un développeur web efficace et polyvalent.
           </p>
         </div>
         <div className={`${styles.element} ${styles.vertical}`}>

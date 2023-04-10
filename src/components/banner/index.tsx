@@ -9,7 +9,7 @@ const Banner = () => {
       <div className={styles.left}>
         <h1 className={styles.title}>Développeur fullstack web & mobile</h1>
         <p>
-          Devenez un développeur web professionnel en seulement 12 semaines!
+          Devenez un développeur web professionnel en seulement 4 semaines!
           Rejoignez notre formation de développement web dès maintenant pour
           apprendre les compétences pratiques nécessaires pour créer des
           applications web et mobiles de qualité professionnelle.
